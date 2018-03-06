@@ -1,4 +1,12 @@
-<!--  TODO , add names of colleagues and managers -->
+<!--  TODO, add names of colleagues and managers 
+italic names and app names
+word,space  fixed everything
+
+HTML, MySQL , QA - stress on these.
+Remove first TD, stretch RBC and IMB instead
+
+
+-->
 <html>
 <style type="text/css">
   body {
@@ -22,20 +30,41 @@
   H2 {
     margin-top: 20;
     margin-bottom: 0.5em;
+    font-family: Arial;
     font-size: 16px;
     font-weight: bold;
     border-bottom: 1px solid white;
 
   }
-
-  .job {
-    font-size: 14px;
+  
+ H3 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 12px;
     font-weight: bold;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    text-align: left;
   }
 
+  hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .job {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    /*
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    */
+    text-align: left;
+    
+    margin-bottom: 1em;
+    margin-top: 2em;
+    /*
+    display: grid; 
+    grid-template-columns: 1fr 2fr;*/
+  }
 
 
   .contacts {
@@ -47,15 +76,12 @@
   }
 
 
-  TD,
-  TH,
-  TR {
+  TD, TH, TR {
     border-spacing: 0px;
     font-size: 11px;
   }
 
-  TH,
-  TD {
+  TH, TD {
     text-align: left;
     vertical-align: top;
   }
@@ -65,27 +91,6 @@
     padding-right: 1em;
   }
 
-  feDropShadow TD.nowrap {
-    white-space: nowrap;
-    text-align: left;
-    vertical-align: middle;
-    font-family: Courier;
-  }
-
-  TH.menu {
-    text-align: center;
-  }
-
-  TH.header {
-    text-align: left;
-    background: #cccccc;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 14px;
-  }
-
-  TH.ref {
-    text-align: right;
-  }
 
   UL {
     list-style-position: outside;
@@ -96,10 +101,12 @@
     text-align: left;
   }
 
-  BLOCKQUOTE {
-    margin-left: 1.5em;
-    margin-right: 0.5em;
-  }
+span {
+    display:inline-block; 
+    width: 30px;
+}
+
+
 </style>
 
 
@@ -107,65 +114,57 @@
 
 <div style="width:800px;margin:10px;">
   <div class="contacts">
-    <div>(416)419-7792</div>
-    <div style='font-size: 16px'> Eugene Kirillov</div>
+    <div>(416) 419-7792</div>
+    <div style='font-size: 18px'> Eugene Kirillov</div>
     <div>CyrilCanada@yahoo.com</div>
   </div>
   <hr>
 
-  <table border="0" cellpadding="4" cellspacing="1" width="800">
-    <tbody>
-      <tr align="left">
-        <th width="100" valign="top">Objective:</th>
-        <td>
-          A position of System Analyst/Developer of Financial Applications (Capital, Risk Valuation, Insurance )
-
+  <h2>Objective</h2>
+<ul>
+          <li>A position of System Analyst/Developer of Financial Applications (Capital, Risk Valuation, Insurance )
+</ul>
           <!-- <li>ETL/DB Developer  (experience in Capital/Valuation/Insurance Systems )  </li> -->
           <!-- <li>Web Application Support/Development (Perl, PHP, Java(core,JSP,JDBC)      </li> -->
           <!-- <li>UNIX System Administrator ( 4 years of combined AIX/Linux administration, certified )</li> -->
 
-        </td>
-      </tr>
-      <tr align="left" valign="top">
-        <th>Experience</th>
-        <td>
-          <ul>
-            <li>
-              <b>ETL </b>: Perl/DB for System migrations, conversions and data feeds customizations </li>
-            <li>
-              <b>UNIX </b>: AIX, Solaris, HP/UX, Linux) </li>
-            <li>
-              <b>Languages </b>: Perl, C, PHP, Java, Shells </li>
-            <li><b>RDBMS </b>: Sybase, Oracle, MS SQL Server, MySQL, DB2</li>
-            <li>
-              <b>Source control</b>: Git, CVS </li>
-            <li>
-              <b>Agile Tools </b> Jira, Confluence </li>
-            <li>
-              <b>Financials</b>
-            </li>
+<h2>Experience</h2>
+           <ul>
+            <li> <b>ETL </b>: Perl/DB for System migrations, conversions and data feeds customizations </li>
+            <li> <b>UNIX </b>: AIX, Solaris, HP/UX, Linux) </li>
+            <li> <b>Languages </b>: Perl, C, PHP, Java, script shells  </li>
+            <li> <b>RDBMS </b>: Sybase, Oracle, MS SQL Server, MySQL, DB2</li>
+            <li> <b>Source control</b>: Git, CVS </li>
+            <li> <b>Agile Tools </b> Jira, Confluence </li>
+            <li> <b>Financials</b> </li>
             <ul>
               <li>Market/Credit Risk</li>
               <li>Financial and Market Data Distributors: ADP, FTI, Bloomberg(Back Office)</li>
               <li>Brokerage/Investments</li>
             </ul>
-            <li>
-              <b>WEB</b>
-            </li>
+            <li> <b>WEB</b> </li>
             <ul>
               <li>HTML, JavaScript, CSS, Perl, PHP </li>
               <li>Java: Servlets, JSP, JDBC </li>
               <!-- <li>Servers: Apache HTTP, Tomcat, Websphere</li>    -->
             </ul>
 
-            <!-- <li><b>Mainframe:</b> PL1 , Assembler-370, VSAM, JCL, REXX</li> -->
+            <!-- <li><b>Mainframe:</b> PL1, Assembler-370, VSAM, JCL, REXX</li> -->
             <!-- <li><b>Syntax Parsers   </b>: YACC, LEX/FLEX, CODECHECK(Abraxas) -->
           </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <h2> Education</h2>
+  <ul>
+    <li>
+      <i>"Bachelor in Computer Data processing" </i>(Moscow Aviation Institute) </li>
+  </ul>
 
+  <h2> Training</h2>
+  <ul>
+    <li> <i>"IBM Certified:  AIX System Administration in AIX" </i> (IBM, Tel-Aviv, Israel ) </li>
+    <li> <i>"Team Training" </i>                                    (Wang Laboratories, Austria ) </li>
+    <li> <i>"IBM Certified Database Associate,DB2 UDB V8.1"</i>     (IBM, Toronto, Canada ) </li>
+  </ul>
 
 
   <h2> Professional employment </h2>
@@ -225,7 +224,7 @@
         <td>Web/ETL Developer </td>
         <td>Salomon Smith Barney </td>
         <td>New York </td>
-        <td>Unix, Perl, Java </td>
+        <td>Unix, Sybase, Perl, Java </td>
       </tr>
       <tr>
         <td class=nowrap>Oct 99 - May 00</td>
@@ -234,13 +233,15 @@
         <td>Missisauga</td>
         <td>AIX, Perl-CGI, DB2 </td>
       </tr>
-      <tr>
+
+      <!-- <tr>
         <td class=nowrap>Aug 98 - Oct 99</td>
         <td>System Analyst</td>
         <td>McDonalds Head Office </td>
         <td>Toronto </td>
         <td>AIX, Perl, DB2 </td>
-      </tr>
+      </tr> -->
+
       <tr>
         <td class=nowrap>Sep 98 - May 99</td>
         <td>System Analyst</td>
@@ -255,19 +256,19 @@
         <td>Toronto </td>
         <td>Solaris, Perl, Oracle </td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td class=nowrap>May 97 - Sep 97</td>
         <td>Developer </td>
         <td>Moores Business Forms </td>
         <td>Missisauga</td>
         <td>WinNT, C, Compuset </td>
-      </tr>
+      </tr> -->
       <tr>
         <td class=nowrap>Oct 96 - May 97</td>
         <td>AIX admin </td>
         <td>DeHavilland </td>
         <td>Toronto </td>
-        <td>AIX, Perl, Shells </td>
+        <td>AIX, Perl, script shells  </td>
       </tr>
       <tr>
         <td class=nowrap>Jan 95 - Oct 96</td>
@@ -282,98 +283,67 @@
     <tr><td class=nowrap>Oct 85 - Oct 88</td> <td>Sys.Admin     </td> <td>Energy("Russian NASA")           </td><td>Moscow    </td><td>IBM370,Assembler,PL1   </td></tr>   -->
   </table>
   <hr>
-  <br>
-  <br>
-  <div class="job">Oct 2015 - July 2017 Manulife Financial ( AVP Valuation Systems) , Toronto</div>
-  <b>Position:</b> ETL Developer
+  <div class="job">Oct 2015 - July 2017 <span></span>Manulife Financial ( AVP Valuation Systems), Toronto</div>
+  <div class=position><b>ETL Developer:</b>Windows, Linux, MS SQL Server, Perl, Cobol</div> 
   <ul>
-    <li>Windows, Linux, MS SQL Server ,Perl , Cobol </ul>
-  <ul>
-    Manulife has built new Data Warehouse for more efficient valuation process for Actuarial Department. The Data Warehouse should
-    be connecting via Informatica to Manulife Policy Admin Systems (mainframe based FORTRAN/COBOL legacy). My role was to
-    produce PERL prototype of Informatica ETL process to save on costs of Informatica development. Once Perl prototype developed
-    and verified by business analysts I produced documentation for Informatica developers. After reconciliation with PERL
-    output the Informatica process was deployed into production.
+    <li>
+    Developed pilot ETL process (Perl, MS SQL Server) to export data from multiple 
+    Policy Admin Systems ( Mainframe, Cobol) to new Data Warehouse for valuation in Actuarial Department. 
+    <li> After QA of exported data, provided detailed code specifications for Informatica developers 
   </ul>
 
   <hr>
 
-  <div class="job">Jan 2014 - Jan 2015 TD Securities (Risk Valuation Services) , Toronto</div>
-  <b>Position: </b> System Analyst</ul>
-  <ul>
-    <li> Linux, Solaris, Oracle, MySql ,Perl </ul>
-  <ul>
-    Enhancement of Credit Risk System Pre-Processor for provide a feed from SOPHIS trading system to process Equity Swap deals
-    for downstream valuation and reporting processes.
+  <div class="job">Jan 2014 - Jan 2015 <span></span>TD Securities (Risk Valuation Services), Toronto</div>
+  <div class=position><b>System Analyst</b>: Linux, Solaris, Oracle, MySql, Perl </div> 
+    <ul>Enhancement of Credit Risk System:
+      <li>Developing Pre-Processor of SOPHIS trading system feed for downstream valuation and reporting processes.
   </ul>
 
   <hr>
 
-  <div class="job">Feb 2013 - Jan 2014 TD Waterhouse (Direct Channels Technology Solutions) , Toronto</div>
-  <b>Position: </b> WebBroker Support Developer (
-  <i>WebBroker allows clients to perform internet trading and request various market information </i>)
-  <br>
+  <div class="job">Feb 2013 - Jan 2014 <span></span>TD Waterhouse (Direct Channels Technology Solutions), Toronto</div>
+  <div class=position><b> <i>WebBroker</i> Support Developer: </b> AIX, Linux, AIX, Perl,Java,Jira, Maven, Git</div>
   <ul>
-    <li>Perl, Shells, Java, Linux, AIX , Oracle, Tivoli
-      <li>Agile: Jira, Maven, Git</li>
-  </ul>
-  <ul>
-    WebBroker implementation testing ,deployment, issues resolving, fixes and quarterly releases
-    <!-- <li> Audit requirements for potential web threats -->
-    <!-- <li> Adhoc requests from HelpDesk and other services -->
-  </ul>
+    <li> <i>WebBroker </i>QA, deployments and support issues resolving, fixes and quarterly releases
+    <li> Audit requirements for potential web threats 
+    <li> Adhoc requests from HelpDesk and other services 
   </ul>
 
   <hr>
 
-  <div class="job">Dec 2008 - Aug 2012 TD Securities (Risk Valuation Services) , Toronto</div>
-  <b>Position: </b> System Analyst
-  <ul>
-    <li>Linux (SuSE), Solaris, Oracle, Perl </ul>
+  <div class="job">Dec 2008 - Aug 2012 <span></span>TD Securities (Risk Valuation Services), Toronto</div>
+  <div class=position><b> System Analyst: </b>Linux, Solaris, Oracle, Perl </div>
   <!-- (<i>produces exposure profiles for counterparties and measure these exposures against limits to determine availability and excesses </i>). -->
   <ul>
     <li>loading/reconciliation of market data and trades/deals data from multiple trading system into Credit Risk database.
-      <li>development and maintained detailed deals reporting (upto 60 deals attributes) for traders and risk analytics.
-        <li>migration of Legacy MRS to new platform
+    <li>development and maintained detailed deals reporting (upto 60 deals attributes) for traders and risk analytics.
   </ul>
   </ul>
 
   <hr>
 
-  <div class="job">Sep 2006 - Jun 2008 RBC Capital Markets (Prime Brokerage Services) ,Toronto</div>
-  <b>Department:</b> RBC GTS Technology, Application Development Group
-  <br>
-  <b>Position: </b>System Analyst
-  <br>
-  <ul>
-    <li>SunOS 5.8 (Solaris), HP-UX </li>
-    <li>Sybase </li>
-    <li>Shells, Perl(DBI), HTML/CSS, Perl-CGI, Javascript, Java(Servlets,JSP) </li>
-  </ul>
-
-  <br>
-  <b>Responsibilities</b> Maintenance, Operational Support and Enhancement of Middle Office applications:
-  <ul>
+   <!-- Department:</b> RBC GTS Technology, Application Development Group 
+    Sunita Nerevetla
+    Vlad Gurtovoy
+    Rad  
+    Matthew Owen
+  -->
+  <div class="job">Sep 2006 - Jun 2008 <span></span>RBC Capital Markets (Prime Brokerage Services), Toronto</div>
+  <div class=position><b> System Analyst: </b>Solaris, Sybase, Korn-Shelll, Perl-DBI, Perl-CGI, Java(Servlets,JSP) </div>
+  <ul> Operational Support and Enhancement of Middle Office applications:
     <li>
-      <b>Security Master DB (MSD).</b> MSD consolidates securities data feeds (descriptions, prices, corporate actions , etc)
+      <b>Security Master DB (MSD).</b> MSD consolidates securities data feeds (descriptions, prices, corporate actions, etc)
       from multiple sources ( Bloomberg, ADP, FTI ). The duties included supervision and validation of overnight data loads,
-      reconciliation of Bloomberg prices against ADP/FTI security attributes, adhoc reports for Prime Brokerage Middle Office(Hedge
-      funds) and Customer Services. The support included both backend ( Perl, Sybase, Solaris) and Front End ( Weblogic +
-      Servlets/JSP ).
+      reconciliation of Bloomberg prices against ADP/FTI security attributes, adhoc reports for Prime Brokerage Middle Office(Hedge funds) and Customer Services. The support included both backend ( Perl, Sybase, Solaris) and Front End ( Java Servlets ).
       <li>
         <b>Hedge Funds customer account reporting system (DS Prime).</b>
-        Maintained and developed DS Prime reporting (such as margin and concentration reports, etc) per Customer Service request.
-        The support included both DS Prime Database (Sybase) and front end ( Apache, Perl-CGI)
+        Maintained and developed DS Prime reporting (such as margin and concentration reports, etc) per Customer Service request. The support included both DS Prime Database (Sybase) and front end ( Apache, Perl-CGI)
   </ul>
   <hr>
 
-  <div class="job">Aug 2005 - Jun 2006 TD Securities (Risk Valuation Services) Toronto</div>
-  <b>Position: </b>System Analyst
-  <br>
-  <ul>
-    <li>Linux , Solaris, Oracle, Perl </li>
-  </ul>
-
+  <div class="job">Aug 2005 - Jun 2006 <span></span>TD Securities (Risk Valuation Services) Toronto</div>
+  <div class=position><b> System Analyst:</b> Linux, Solaris, Oracle, Perl </div>
   <ul>
     Development of Aggregation Risk Engine for Market Risk System, for reporting VaR on multiple reporting hierarchies.
     <!-- Development of Portfolio Hierarchy Reporting. -->
@@ -381,28 +351,21 @@
 
   <hr>
 
-  <div class="job">Mar 2003 - May 2005 &nbsp; IBM Canada (DB2 Lab), Markham</div>
+  <div class="job">Mar 2003 - May 2005 <span></span> IBM Canada (DB2 Lab), Markham</div>
   <!-- <b>Department:  </b> DB2 UDB Continuing Engineering: Install, Up & Running UNIX/Linux -->
-  <b>Position: </b>Linux-UNIX System Admin / QA Analyst
-  <br>
-  <ul>
-    <li>Linux, AIX SunOS, HP-UX</li>
-    <li>DB2 ,Perl, PHP, Korn-Shell </li>
-  </ul>
+  <div class=position><b>QA Analyst:</b> Linux, AIX, SunOS, HP-UX , DB2, Perl, PHP, Korn-Shell </div>
   <ul>
     <li>Support and development of DB2 packaging for UNIX/LINUX systems.
+    <li>Development of team collaboration web site (PHP)
   </ul>
 
   <hr>
-
-  <div class="job">May 2000 - Feb 2002 Salomon Smith Barney(Capital Markets) , New York</div>
-  <b>Position: </b>&nbsp; Web/Perl Developer
-  <br>
+  <div class="job">May 2000 - Feb 2002 <span></span>Salomon Smith Barney(Capital Markets), New York</div>
+  <div class=position><b>  Web/Perl Developer:</b> JRun, Sybase, Perl, Java, Shell, JavaScript</div>
   <ul>
-    <li>Apache, JRun, Sybase, Java( Servlets, JSP, JDBC ), Perl, shells, JavaScript</li>
-  </ul>
-  <ul>Developed intranet web application "Credit Analytics Workstation" for Credit Pre-Settlement-Exposure system</ul>
-  <!-- CAW provided comprehensive tabular and graphical WEB-browser interface to counterparty portfolios, market data and PSE calculation results. The "back end" of CAW , the data collector, periodically uploads PSE results, market data and portfolio transactions into Sybase data base for further access via CAW WEB server. My part of the project included:
+     <li> Development of intranet "Credit Analytics Workstation" for Credit Pre-Settlement-Exposure system
+     <li> Developed back-end data collector from PSE server </ul>
+  <!-- CAW provided comprehensive tabular and graphical WEB-browser interface to counterparty portfolios, market data and PSE calculation results. The "back end" of CAW, the data collector, periodically uploads PSE results, market data and portfolio transactions into Sybase data base for further access via CAW WEB server. My part of the project included:
   <ul>
   <li>prototype development of CAW components ( Market Data Viewer, Navigator, Menus, etc )</li>
   <li>Source Version Control Administrator ( CVS, CVS-WEB )</li>
@@ -417,92 +380,82 @@
 
   <hr>
 
-  <div class="job">Oct 1999 - Apr 2000 Bell Mobility ,Missisauga</div>
-  <b>Position:</b> Unix Sysadmin and Web Developer
+  <div class="job">Oct 1999 - Apr 2000 <span></span>Bell Mobility, Missisauga</div>
+  <div class=position><b> Unix Sysadmin and Web Developer</b> AIX, Linux, Apache, Perl, Korn-Shell  </div>
   <ul>
-    <li>Unix AIX 4 , Linux , Apache, PERL, shells </li>
+     <li>AIX System Administration of PrePaid System</li>
+     <li>Development of performance monitoring intranet web application for Prepaid System</li>
   </ul>
   <!-- 
 <div>Successfully provided operation of Wireless PrePaid (WPP) System for Bell Mobility The system provided prepaid cellular phone service and consist of two independent nodes of 10 RISC-6000 servers each ( Application Server, Database Cluster, Interactive Voice Response (IVR), etc ). My main responsibility is to provide uninterrupted operation of the system which resulted sharing of two positions:<br>
-Development of Intranet Report Server (IRS), based on Linux and Apache Web Server. The main purpose of IRS is to collect vital performance statistic ( network, CPU, paging, disk usage, disk I/O activity, DB2 space usage) from every host and present it by way of graphs and tables via WEB site. The IRS consists of two main components: the Back End Collector and HTML/Graph-generating Front End. The Collector has local subsystem on every server to collect and keep daily statistics and central repository subsystem which provided data transfer, validation and data housekeeping on WEB-server host. The Front End was implemented as set of CGI-scripts based on PERL, GD.pm and GIFgraph.pm. The IRS became a very important tool for performance monitoring, early problem detection and analysis of historical data. The further enhancements included DB2 table space usage monitoring, graphical forecast of potential table space exhaustion and early email alarm of DB2 administrator. The system had been developed using only Open Source software: Linux, Apache Server, Perl, GD, GIFgraph, which resulted into low development cost. 
+Development of Intranet Report Server (IRS), based on Linux and Apache Web Server. The main purpose of IRS is to collect vital performance statistic ( network, CPU, paging, disk usage, disk I/O activity, DB2 space usage) from every host and present it by way of graphs and tables via WEB site. The IRS consists of two main components: the Back End Collector and HTML/Graph-generating Front End. The Collector has local subsystem on every server to collect and keep daily statistics and central repository subsystem which provided data transfer, validation and data housekeeping on WEB-server host. The Front End was implemented as set of CGI-scripts based on Perl, GD.pm and GIFgraph.pm. The IRS became a very important tool for performance monitoring, early problem detection and analysis of historical data. The further enhancements included DB2 table space usage monitoring, graphical forecast of potential table space exhaustion and early email alarm of DB2 administrator. The system had been developed using only Open Source software: Linux, Apache Server, Perl, GD, GIFgraph, which resulted into low development cost. 
 </div> -->
 
+  <!--
   <hr>
 
   <div class="job">Jul 1999 - Oct 1999 McDonald's Restaurants(Head Office), Toronto</div>
   <b>Position:</b> ETL Developer
   <br>
   <ul>
-    <li>UNIX-AIX 4 , DB2 , C, PERL , Shells</li>
+    <li>UNIX-AIX 4, DB2, C, Perl, script shells </li>
   </ul>
   <ul>Development of staging area of Corporate Online Database, Operational Data Store (DW) </ul>
-  <!-- <ul>
-Developed a number of application providing data loading from TANDEM (restaurants pool), AS/400 (offices pool) into Online DB2 database and further into Operational Data Store (DB2 Data Warehouse). The data included menus, daily receipts, daily sales, hourly sales, A/P, A/R , G/L. The applications had been wrapped up into perl/ksh shells and set into crontab to run automatically. <br> <br> <br>
+   <ul>
+Developed a number of application providing data loading from TANDEM (restaurants pool), AS/400 (offices pool) into Online DB2 database and further into Operational Data Store (DB2 Data Warehouse). The data included menus, daily receipts, daily sales, hourly sales, A/P, A/R, G/L. The applications had been wrapped up into perl/ksh script shells  and set into crontab to run automatically. <br> <br> <br>
 </ul>
  -->
   <hr>
 
-  <div class="job">Sep 1998 - May 1999 PricewaterhouseCoopers Canada, Toronto</div>
-  <b>Position:</b>ETL Developer
-  <ul>
-    <li>Unix , Perl, Shells, Oracle(PL/SQL,SQL-PLUS,SQL-LOAD)</li>
-  </ul>
-  <ul> Development of ETL process to merge corporate data of Coopers Inc to Data Warehouse of PriceWaterhouse after their merger.</ul>
+  <div class="job">Sep 1998 - May 1999 <span></span> PwC Canada, Toronto</div>
+  <div class=position><b> ETL Developer</b> Unix, Perl, Korn-Shell, Oracle</div>
+  <ul> <li>Development of ETL process to merge corporate data of Coopers Inc to PwC Data Warehouse</ul
 
   <!-- 
-It was formed by merger of Price Waterhouse and Coopers &amp; Lybrand. The corporate financial and business database system of "Coopers" had to be merged to Price Waterhouse ORACLE DB system and further converted into global Data Warehouse system. My responsibility was a conversion of Coopers DB ( AIX-ISAM) into Price Waterhouse-compatible ORACLE Data Warehouse. This required design and implementation of "DW LOADING BAY" , which required thorough business and financial analysis to provide proper mapping, validation and reconciliation of converted data. Since the conversion must be provided step-by-step on monthly basis during the whole year 1999 (due to gradual conversion of Coopers offices), the production deployment routine also had to be provided and well planned. The project was accomplished as scheduled and deadlines had been met.
+It was formed by merger of Price Waterhouse and Coopers &amp; Lybrand. The corporate financial and business database system of "Coopers" had to be merged to Price Waterhouse ORACLE DB system and further converted into global Data Warehouse system. My responsibility was a conversion of Coopers DB ( AIX-ISAM) into Price Waterhouse-compatible ORACLE Data Warehouse. This required design and implementation of "DW LOADING BAY", which required thorough business and financial analysis to provide proper mapping, validation and reconciliation of converted data. Since the conversion must be provided step-by-step on monthly basis during the whole year 1999 (due to gradual conversion of Coopers offices), the production deployment routine also had to be provided and well planned. The project was accomplished as scheduled and deadlines had been met.
  -->
 
 
   <hr>
-  <div class="job">Sep 1997 - Sep 1998 AT&amp;T Canada (WorldNet ISP), Toronto</div>
-  <b>Position:</b>&nbsp; System Analyst/Web Developer
-  <br>
+  <div class="job">Sep 1997 - Sep 1998  <span></span>AT&amp;T Canada (WorldNet ISP), Toronto</div>
+  <div class=position><b> System Analyst/Web Developer: </b> Solaris, C/C++, Perl-CGI, ORACLE</div>
   <ul>
-    <li>UNIX-Sun Solaris , C/C++ , PERL, Javascript, Perl-CGI, ORACLE</li>
-  </ul>
-  <ul>
-    Support and development of ATT ISP Report Server .
+     <li> Support and development of ATT ISP Report Server.
+     <li> Year 2000 solution 
   </ul>
 
 
   <!-- 
 <li> Year 2000 solution development (awarded with AT&amp;T Canada's Excellence Award).<br> </li>
 <li> ISP Report Web Server.
-Developed Report Server , a WEB site with a comprehensive set of reports about virtually every aspect of WorldNet ISP operation: technical,customer support and financial. The backend of the WEB were the several ORACLE database. I used PL/SQL, Developer/2000 (Graphics 2.5) to generate graph images and PERL GGI scripting. Applied a third party JAVA applets to provide easy tree view navigation, which reduced drastically the cost of maintenance and enhancement of the web development.
+Developed Report Server, a WEB site with a comprehensive set of reports about virtually every aspect of WorldNet ISP operation: technical,customer support and financial. The backend of the WEB were the several ORACLE database. I used PL/SQL, Developer/2000 (Graphics 2.5) to generate graph images and Perl GGI scripting. Applied a third party JAVA applets to provide easy tree view navigation, which reduced drastically the cost of maintenance and enhancement of the web development.
 </li>
-</ul> -->
+</ul> 
 
 
   <hr>
-  <div class="job">May 1997 - Aug 1997 Moores Business Forms , Mississauga</div>
+  <div class="job">May 1997 - Aug 1997 Moores Business Forms, Mississauga</div>
   <b>Position:</b>Compuset Developer:
   <br>
   <ul>
-    <li> WinNT , C </ul>
+    <li> WinNT, C </ul>
   <ul> Development of Compuset control system for industrial printshop line </ul>
-  <!-- to provide printing and delivery of a semiannual statement for clients, brokers and head office of the "Fidelity Investment" mutual funds.  -->
+  to provide printing and delivery of a semiannual statement for clients, brokers and head office of the "Fidelity Investment" mutual funds.  -->
+
   <hr>
-  <div class="job">Oct 1996 - May 1997 deHavilland Inc. ( Downsview, ON)</div>
-  <b>Position:</b>&nbsp; UNIX System administrator
-  <br>
+  <div class="job">Oct 1996 - May 1997 <span></span>deHavilland , Toronto</div>
+  <div class=position><b> UNIX Administrator: </b> UNIX,Linux,Perl,script shells </div>
   <ul>
-    <li>UNIX,Linux,Perl,Shells</li>
-  </ul>
-  <ul>
-    Support,configuration and testing of large client/server environment, user accounting, backups, performance tuning
+    <li>Support,configuration and testing of large client/server environment 
+    <li>User accounting, backups, performance tuning
   </ul>
 
   <hr>
 
   <div class="job">Jan 1995 - Oct 1996 Systems Xcellence, Milton</div>
-  <b>Position:</b> Software Developer
-  <br>
-  <ul>
-    <li>AIX 4.1, Oracle, C, Pro/C, Visual Basic , Shells</li>
-  </ul>
-  <ul> Development of interactive TV switch for IBM Canada</ul>
-  <!--   
+  <div class=position><b> Software Developer:</b> AIX, Oracle, C, Pro/C, Visual Basic </div>
+  <ul> <li>Development of interactive TV switch for IBM Canada</ul>
+ <!--   
   <li>Network Express, IPC: sockets, shared memory, semaphores, signals )</li>
   <li>Utilities: dbx, YACC, LEX, make, CodeCheck (Abraxas)</li>
   <li>Version Control: SCCS,RCS</li> -->
@@ -514,9 +467,8 @@ Developed Report Server , a WEB site with a comprehensive set of reports about v
   <li>Operator Alert and Reconciliation Monitor (C, ORACLE, UNIX (AIX), NetView</li>
 </ul> -->
 
-  <hr>
-
-  <!-- <div class="job">Jun 1992 - Aug 1994 Sapiens Tehnologies LTD (Rehovot, Israel)</div>
+<!-- 
+<div class="job">Jun 1992 - Aug 1994 <span></span>Sapiens Tehnologies LTD , Israel</div>
 <b>Environment:</b>
 <ul>
   <li>Hardware: IBM RS-6000, IBM-PC, IBM-Mainframe</li>
@@ -536,8 +488,6 @@ Participated and successfully completed the most important project carried out i
   <li>Open I/O API development to port to databases.</li>
   <li>Portability analysis</li>
   </ul>
-
-
 <hr>
 
 <div class="job">Oct 1988 - Sep 1991 Wang Laboratories Inc. (Moscow, Russia)</div>
@@ -552,10 +502,9 @@ Participated and successfully completed the most important project carried out i
 
 <hr>
 
-<div class="job">Oct 1985 - Oct 1988 , System programmer,  Energy( Russian NASA) , Moscow , Russia</div>
-<b>Environment:</b>Mainframe: IBM-370,Assembler-370, PL/1, FORTRAN, Cobol -->
+<div class="job">Oct 1985 - Oct 1988, System programmer, Energy( Russian NASA), Moscow, Russia</div>
+<b>Environment:</b>Mainframe: IBM-370,Assembler-370, PL/1, FORTRAN, Cobol 
 
-  <!-- 
   <div hidden>
     <a name=Accomplishments></a>
     <h2> Major Accomplishments </h2>
@@ -638,7 +587,7 @@ Participated and successfully completed the most important project carried out i
           <td>
             <b>Wang</b>
           </td>
-          <td>Supported office management system of Russia Prime Minister office in Kremlin ,Moscow</td>
+          <td>Supported office management system of Russia Prime Minister office in Kremlin, Moscow</td>
         </tr>
         <tr>
           <th>1985-1988</th>
@@ -651,25 +600,30 @@ Participated and successfully completed the most important project carried out i
           </td>
         </tr>
       </tbody>
-    </table> -->
+    </table> 
 
   <h2> Education</h2>
   <ul>
     <li>
       <i>"Bachelor in Computer Data processing" </i>(Moscow Aviation Institute) </li>
   </ul>
-
+-->
+<hr>
   <h2> Training</h2>
   <ul>
-    <li>
-      <i>"IBM Certified System Administering in AIX" </i> (IBM, Tel-Aviv, Israel ) </li>
-    <li>
-      <i>"Team Training" </i> (Wang Laboratories, Austria ) </li>
-    <li>
-      <i>"IBM Certified Database Associate,DB2 UDB V8.1"</i>
-      </a> ( IBM, Toronto, Canada ) </li>
+    <li> <i>"IBM Certified System Administering in AIX" </i> (IBM, Tel-Aviv, Israel ) </li>
+    <li> <i>"Team Training" </i> (Wang Laboratories, Austria ) </li>
+    <li> <i>"IBM Certified Database Associate,DB2 UDB V8.1"</i> ( IBM, Toronto, Canada ) </li>
   </ul>
-</div>
+
+  <h2> Other Languages</h2>
+  <ul>
+    <li>Russian (native)</li>
+    <li>Hebrew  (Intermediate)</li>
+    <li>German  (High School)</li>
+    <li>French  (Beginner,current study)</li>
+  </ul>
+
 </div>
 
 </html>
